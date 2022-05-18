@@ -1,0 +1,43 @@
+.table {
+    width: 100%;
+    height: 100%;
+}
+
+.img-gp {
+    text-align: left;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.img-cota {
+    text-align: right;
+    width: 60%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.corpo-email {
+    font-size: medium;
+    margin: auto;
+    padding: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ .link-click {
+    text-align: center;
+    cursor: pointer;
+    background-color: #00325C;
+    color: white;
+    width: 50%;
+ }
+
+ .corpo-rodape {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+}
+
+.img-portal {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}

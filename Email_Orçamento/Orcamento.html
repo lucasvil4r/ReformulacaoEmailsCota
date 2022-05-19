@@ -1,221 +1,198 @@
-<html><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
-    <body>
-        <head>
-            <style>
-                table, th, td {  border: 1px hidden black; padding: 5px; border-collapse: collapse;  text-align:center;}
-            </style>
-            </head>
-            <h2>Orçamento formalizado com sucesso - ID: 2964</h2>
-            <p>Seu orçamento está salvo no seu painel e nossa equipe entrará em contato para prosseguirmos com seu orçamento.</p>
-            <h2>Seus dados</h2>
-            <p>
-                <b>Seu e-mail:</b>
-                <a href="mailto: julio.clemente@awnet.com.br" target="_blank">julio.clemente@awnet.com.br</a>
-                <br>Nome da empresa: ATHIE WOHNRATH ASSOCIADOS PROJETOS, CONSTRUCAO E GERENCIAMEN<br>CPF ou CNPJ: 61379863000106<br>Código GP Cabling: 04090PO</p>
-                <p>
-                    <b>Seu vendedor segue em cópia neste e-mail</b>
-                    <br>Shirlei Gomes De Oliveira Simao  - 
-                    <a href="mailto:shirlei@gpcabling.com.br" target="_blank">shirlei@gpcabling.com.br</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<style>
+
+.cota-on-cabe {
+      width: 100%;
+      height: 100%;
+      display: block;
+}
+
+.orcamento {
+    text-align: center;
+    margin: 30px;
+    padding: auto;
+    text-align: center;
+    border: white;
+}
+
+.text-orcamento {
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: auto;
+    text-align: justify;
+    max-width: fit-content;
+}
+
+.title-dados {
+    text-align: left;
+    margin: 10px;
+    font-size: 20px;
+    max-width: fit-content;
+    padding: auto;
+}
+
+.dados-cliente {
+    text-align: left;
+    margin: 10px;
+    font-size: 18px;
+    max-width:fit-content;
+    padding: auto;
+
+}
+
+.direct-vendedor {
+    text-align: left;
+    margin: 10px;
+    font-size: 20px;
+    max-width:fit-content;
+    padding: auto;
+}
+
+.vendedor {
+    text-align: left;
+    margin: 10px;
+    font-size: 17px;
+    max-width:fit-content;
+    padding: auto;
+}
+
+.resumo {
+    font-size: xx-large;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    margin-top: 30px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.rodape {
+    width: 100%;
+    height: 100%;
+}
+
+.img-cota-rodape {
+    width: 100%;
+    height: 100%;
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 26%;
+}
+
+.text-rodape {
+    margin: 10px;
+}
+
+.rodape {
+    width: 100%;
+    height: 100%;
+}
+
+</style>
+<body>
+    <div>
+        <a href="https://gpcabling.com.br/"><img class="cota-on-cabe" src="cotaonline.jpg" alt="Logo GP"></a>
+    </div>
+    <div>
+        <h1 class="orcamento">
+            Orçamento formalizado com sucesso - ID: 2964
+        </h1>
+        <hr>
+        <p class="text-orcamento">
+            Orçamento está salvo no seu painel e nossa equipe entrará em contato para prosseguirmos com seu orçamento.
+        </p>
+        <br/>
+        <div class="corpo">
+            <h2 class="title-dados">
+                Seus dados:
+            </h2>
+            <div>
+                <p class="dados-cliente">
+                    Email:
                 </p>
-                <br>
-                <h2>Resumo do seu orçamento:</h2>
-                <table>
+                <p class="dados-cliente">
+                    Nome da empresa:
+                </p>
+                <p class="dados-cliente">
+                    CPF ou CNPJ:
+                </p>
+                <p class="dados-cliente">
+                    Código GP Cabling:
+                </p>
+            </div>
+            <br/>
+            <div>
+                <b class="direct-vendedor">
+                    Seu vendedor segue em cópia neste e-mail:
+                </b>
+                <p class="vendedor">
+                    Shirlei Gomes De Oliveira Simao - shirlei@gpcabling.com.br
+                </p>
+            </div>
+            <hr>
+            <div>
+                <h2 class="resumo">
+                    Resumo do seu orçamento:
+                </h2>
+                <br/>
+            </div>
+            <div class="dataTable-container">
+                <table id="datatablesSimple" class="dataTable-table">
                     <thead>
                         <tr>
-                            <th>
-                                Qtd
-                            </th>
-                            <th>
-                                Codigo
-                            </th>
-                            <th>
-                                Nome
-                            </th>
-                            <th>
-                                Fabricante
-                            </th>
+                            <th class="item-tabela">Quantidade</th>
+                            <th class="item-tabela">Código</th>
+                            <th>Part number</th>
+                            <th class="item-tabela">Descrição do item</th>
+                            <th class="item-tabela">Fabricante</th>
                         </tr>
                     </thead>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                19306
-                            </td>
-                            <td>
-                                CABO UTP CM 4P X 23 AWG CAT.6   VM
-                            </td>
-                            <td>
-                                NX
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                44073
-                            </td>
-                            <td>
-                                PATCH PANEL 24P RJ-45 CAT6 C/GUIA
-                            </td>
-                            <td>
-                                NX
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                44072
-                            </td>
-                            <td>
-                                PATCH CABLE CAT.6 CM 2,5 MT. BR
-                            </td>
-                            <td>
-                                NX
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                44070
-                            </td>
-                            <td>
-                                PATCH CABLE CAT.6 CM 1,5 MT. BR
-                            </td>
-                            <td>
-                                NX
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                44003
-                            </td>
-                            <td>
-                                JACK RJ-45 CAT.6 KS TL  BG  568-A/B
-                            </td>
-                            <td>
-                                NX
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                44010
-                            </td>
-                            <td>
-                                ESPELHO 4X2&quot; C/2 PORTAS NX BRANCO
-                            </td>
-                            <td>
-                                NX
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                67101
-                            </td>
-                            <td>
-                                NO BREAK R MONOFASICO 220V 1KVA
-                            </td>
-                            <td>
-                                DE
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                67300
-                            </td>
-                            <td>
-                                NO BREAK RT MONO 220V 6KVA C/BAT
-                            </td>
-                            <td>
-                                DE
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                85191
-                            </td>
-                            <td>
-                                GUIA DE CABO 1U-FECH.80 MM ABS . PT
-                            </td>
-                            <td>
-                                GC
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                86681
-                            </td>
-                            <td>
-                                CALHA DE TOMADA BASICA 10A 19&quot;C/8T
-                            </td>
-                            <td>
-                                GC
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                97065
-                            </td>
-                            <td>
-                                MINI ARM. 16U X 700 P+1 BAND.S/V PT</td>
-                                <td>
-                                    EC
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    1
-                                </td>
-                                <td>
-                                    75454
-                                </td>
-                                <td>
-                                    EASY ARM. SERVER 42UX800X1100 PF/PB
-                                </td>
-                                <td>
-                                    AP
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th colspan="8">
-                                    <p>
-                                        Acesse seu painel para visualizar seu orcamento.
-                                    </p>
-                                </th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <p>
-                        Muito obrigado,<br>Equipe cotaONLINE
-                    </p>
-                    <img alt="Brand" src="https://www.gpcabling.com.br/img/logo-cotaONLINE.jpg"></body></html>
+                    <tr>
+                        <td>01</td>
+                        <td>94013</td>
+                        <td>xxxx</td>
+                        <td>Cabo UTP</td>
+                        <td>NX</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>95403</td>
+                        <td>xxxx</td>
+                        <td>RJ-45</td>
+                        <td>CM</td>
+                    </tr>
+                </table>
+            </div>
+            <br/>
+            <div class="rodape">
+                <p class="text-rodape"><b>Obrigado!</b><br/>GP Cabling! Maior distribuidora de Cabeamento Estruturado, Data Centers, CFTV, Redes Industriais e Nobreaks.</p>
+                <a href="https://gpcabling.com.br/"><img class="img-cota-rodape" src="logo_cotaonline.png" alt="Logo cota"></a>            
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+</body>
+</html>

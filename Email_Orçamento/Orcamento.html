@@ -1,149 +1,150 @@
 <!DOCTYPE html>
-<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Orçamento</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <style>
 
-        * {
-            padding: 0;
-            margin: 0;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 16px;
-        }
+        <title>Orçamento</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
-        .cota-on-cabe {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
+        <style>
+            * {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 16px;
+            }
 
-        .orcamento {
-            font-size: 40px;
-            text-align: center;
-            margin: auto;
-            padding: auto;
-        }
+            .orcamento {
+                font-size: 40px;
+                text-align: center;
+                margin: auto;
+                padding: auto;
+            }
 
-        .text-orcamento {
-            text-align: center;
-            margin: 10px;
-            width: 100%;
-            height: 100%;
-            font-size: 18px;
-            padding: auto;
-            text-align: justify;
-            max-width: fit-content;
-        }
+            .text-orcamento {
+                text-align: center;
+                margin: 10px;
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                padding: auto;
+                text-align: justify;
+                max-width: fit-content;
+            }
 
-        .title-dados {
-            text-align: left;
-            margin: 10px;
-            font-size: 20px;
-            max-width: fit-content;
-            padding: auto;
-        }
+            .title-dados {
+                text-align: left;
+                margin: 10px;
+                font-size: 20px;
+                max-width: fit-content;
+                padding: auto;
+            }
 
-        .dados-cliente {
-            text-align: left;
-            margin: 10px;
-            font-size: 18px;
-            max-width:fit-content;
-            padding: auto;
-        }
+            .dados-cliente {
+                text-align: left;
+                margin: 10px;
+                font-size: 18px;
+                max-width:fit-content;
+                padding: auto;
+            }
 
-        .direct-vendedor {
-            text-align:center;
-            margin: 10px;
-            font-size: 20px;
-            padding: auto;
-        }
+            .direct-vendedor {
+                text-align:center;
+                font-size: 20px;
+                padding: auto;
+            }
 
-        .resumo {
-            font-size: xx-large;
-            text-align: center;
-            margin: auto;
-            padding: auto;
-        }
+            .resumo {
+                font-size: xx-large;
+                text-align: center;
+                padding: auto;
+            }
 
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
+            .center {
+                text-align: center;  
+                margin: auto; 
+            }
 
-        .center {
-            text-align: center;  
-            margin: auto; 
-            max-width: 680px;
-        }
+            .centerTable {
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-        .centerTable {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-    </style>
+            td, th {
+                text-align: left;
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+            
+        </style>
     </head>
     <body>
-        <div class="center" width="680">
-            <a href="https://gpcabling.com.br/"><img width="680" class="cota-on-cabe" src="https://gpcabling.com.br/public/img/banner_cota5800clientes.jpg" alt="Logo GP"></a>
+        <div class="center" >
+            <a href="https://gpcabling.com.br/"><img width="680" src="https://gpcabling.com.br/public/img/banner_cota5800clientes.jpg" alt="Logo GP" style="display: flex;margin-left: auto;margin-right: auto;"></a>
         </div>
-        <div class="center" width="680" aling="center" style="border:2px solid #CDCDCD; font-size:14px; border-top:0px; font-size: 18px">
-            <h1 class="orcamento" >Orçamento formalizado com sucesso ID: 2964</h1>
-            <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
-            <p class="text-orcamento">Orçamento está salvo no seu painel e nossa equipe entrará em contato para prosseguirmos com seu orçamento.</p>
-            <br/>
-                <h2 class="title-dados">Seus dados:</h2>
-                <div>
-                    <p class="dados-cliente">Email:</p>
-                    <p class="dados-cliente">Nome da empresa:</p>
-                    <p class="dados-cliente">CPF ou CNPJ:</p>
-                    <p class="dados-cliente">Código GP Cabling:</p>
-                </div>
-                <br/>
-                <div aling="center">
-                    <p class="direct-vendedor"><b>Seu vendedor segue em cópia neste e-mail:</b><br>Shirlei Gomes De Oliveira Simao - shirlei@gpcabling.com.br</p>
-                    <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
-                </div>
-                <h2 class="resumo">Resumo do seu orçamento:</h2>
-                <div class="center dataTable-container">
-                    <table id="datatablesSimple" class="center dataTable-table">
-                        <thead>
-                            <tr>
-                                <th class="item-tabela">Quantidade</th>
-                                <th class="item-tabela">Código</th>
-                                <th class="item-tabela">Part number</th>
-                                <th class="item-tabela">Descrição do item</th>
-                                <th class="item-tabela">Fabricante</th>
-                            </tr>
-                        </thead>
-                        <tr>
-                            <td>01</td>
-                            <td>94013</td>
-                            <td>xxxxxxxxxxxxxx</td>
-                            <td>Cabo UTP</td>
-                            <td>NX</td>
-                        </tr>
-                        <tr>
-                            <td>03</td>
-                            <td>95403</td>
-                            <td>xxxxxxxxxxxxxxx</td>
-                            <td>RJ-45</td>
-                            <td>CM</td>
-                        </tr>
-                    </table>
-                </div>
-                <br/>
-                <br>
-                <div  class="center" width="680">
-                    <p><b>Obrigado!</b><br/>GP Cabling! Maior distribuidora de Cabeamento Estruturado, Data Centers, CFTV, Redes Industriais e Nobreaks.</p>
-                    <a href="https://gpcabling.com.br/"><img width="200" style="margin: 30px;" src="https://gpcabling.com.br/public/img/logo_cotaonline_alta.jpg" alt="Logo GP"></a>            
-                </div>
+
+        <div class="center">
+            <table class="centerTable" width="680" style="border:2px solid #CDCDCD; font-size:14px; border-top:none; font-size: 18px;">
+                <tr>
+                    <td>
+                        <h1 class="orcamento" >Orçamento formalizado com sucesso ID: 2964</h1>
+                        <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
+                        <p class="text-orcamento">Orçamento está salvo no seu painel e nossa equipe entrará em contato para prosseguirmos com seu orçamento.</p>
+                        <br/>
+    
+                        <h2 class="title-dados">Seus dados:</h2>
+                        <div>
+                            <p class="dados-cliente">Email:</p>
+                            <p class="dados-cliente">Nome da empresa:</p>
+                            <p class="dados-cliente">CPF ou CNPJ:</p>
+                            <p class="dados-cliente">Código GP Cabling:</p>
+                        </div>
+                        <br/>
+                        <div aling="center">
+                            <p class="direct-vendedor"><b>Seu vendedor segue em cópia neste e-mail:</b><br>Shirlei Gomes De Oliveira Simao - shirlei@gpcabling.com.br</p>
+                            <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
+                        </div>
+                        
+                        <h2 class="resumo">Resumo do seu orçamento:</h2>
+                        <div class="center dataTable-container">
+                            <table id="datatablesSimple" class="centerTable dataTable-table">
+                                <thead>
+                                    <tr>
+                                        <th class="item-tabela">Quantidade</th>
+                                        <th class="item-tabela">Código</th>
+                                        <th class="item-tabela">Part number</th>
+                                        <th class="item-tabela">Descrição do item</th>
+                                        <th class="item-tabela">Fabricante</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>01</td>
+                                    <td>94013</td>
+                                    <td>xxxxxxxxxxxxxx</td>
+                                    <td>Cabo UTP</td>
+                                    <td>NX</td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>95403</td>
+                                    <td>xxxxxxxxxxxxxxx</td>
+                                    <td>RJ-45</td>
+                                    <td>CM</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <br/>
+                        <br>
+                        <div class="center">
+                            <p><b>Obrigado!</b><br/>GP Cabling! Maior distribuidora de Cabeamento Estruturado, Data Centers, CFTV, Redes Industriais e Nobreaks.</p>
+                            <a href="https://gpcabling.com.br/"><img width="200" style="margin: 30px;" src="https://gpcabling.com.br/public/img/logo_cotaonline_alta.jpg" alt="Logo GP"></a>            
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Orçamento</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
@@ -26,7 +26,6 @@
             text-align: center;
             margin: auto;
             padding: auto;
-            margin-top: 30px;
         }
 
         .text-orcamento {
@@ -60,7 +59,6 @@
             text-align:center;
             margin: 10px;
             font-size: 20px;
-            max-width:fit-content;
             padding: auto;
         }
 
@@ -69,7 +67,6 @@
             text-align: center;
             margin: auto;
             padding: auto;
-            margin-top: 30px;
         }
 
         td, th {
@@ -81,6 +78,7 @@
         .center {
             text-align: center;  
             margin: auto; 
+            max-width: 680px;
         }
 
         .centerTable {
@@ -94,65 +92,57 @@
         <div class="center" width="680">
             <a href="https://gpcabling.com.br/"><img width="680" class="cota-on-cabe" src="https://gpcabling.com.br/public/img/banner_cota5800clientes.jpg" alt="Logo GP"></a>
         </div>
-        <div class="center" width="680" aling="center">
-            <table class="centerTable" aling="center" width="680" style="border:2px solid #CDCDCD; font-size:14px; border-top:0px; font-size: 18px">
-                <h1 class="orcamento">Orçamento formalizado com sucesso ID: 2964</h1>
-                <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
-                <p class="text-orcamento">Orçamento está salvo no seu painel e nossa equipe entrará em contato para prosseguirmos com seu orçamento.</p>
-                <br/>
-                <div class="corpo">
-                    <h2 class="title-dados">Seus dados:</h2>
-                    <div>
-                        <p class="dados-cliente">Email:</p>
-                        <p class="dados-cliente">Nome da empresa:</p>
-                        <p class="dados-cliente">CPF ou CNPJ:</p>
-                        <p class="dados-cliente">Código GP Cabling:</p>
-                    </div>
-                    <br/>
-                    <div aling="center">
-                        <p class="direct-vendedor"><b>Seu vendedor segue em cópia neste e-mail:</b><br>Shirlei Gomes De Oliveira Simao - shirlei@gpcabling.com.br</p>
-                        <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
-                    </div>
-                    <div>
-                        <h2 class="resumo">Resumo do seu orçamento:</h2>
-                    </div>
-                    <div class="dataTable-container center">
-                        <table id="datatablesSimple" class="dataTable-table">
-                            <thead>
-                                <tr>
-                                    <th class="item-tabela">Quantidade</th>
-                                    <th class="item-tabela">Código</th>
-                                    <th>Part number</th>
-                                    <th class="item-tabela">Descrição do item</th>
-                                    <th class="item-tabela">Fabricante</th>
-                                </tr>
-                            </thead>
-                            <tr>
-                                <td>01</td>
-                                <td>94013</td>
-                                <td>xxxxxxxxxxxxxx</td>
-                                <td>Cabo UTP</td>
-                                <td>NX</td>
-                            </tr>
-                            <tr>
-                                <td>03</td>
-                                <td>95403</td>
-                                <td>xxxxxxxxxxxxxxx</td>
-                                <td>RJ-45</td>
-                                <td>CM</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <br/>
-                    <br>
-                    <div  class="center" width="680">
-                        <p><b>Obrigado!</b><br/>GP Cabling! Maior distribuidora de Cabeamento Estruturado, Data Centers, CFTV, Redes Industriais e Nobreaks.</p>
-                        <div align="center">
-                            <a href="https://gpcabling.com.br/"><img width="200" style src="https://gpcabling.com.br/public/img/logo_cotaonline_alta.jpg" alt="Logo GP"></a>            
-                        </div>
-                    </div>
+        <div class="center" width="680" aling="center" style="border:2px solid #CDCDCD; font-size:14px; border-top:0px; font-size: 18px">
+            <h1 class="orcamento" >Orçamento formalizado com sucesso ID: 2964</h1>
+            <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
+            <p class="text-orcamento">Orçamento está salvo no seu painel e nossa equipe entrará em contato para prosseguirmos com seu orçamento.</p>
+            <br/>
+                <h2 class="title-dados">Seus dados:</h2>
+                <div>
+                    <p class="dados-cliente">Email:</p>
+                    <p class="dados-cliente">Nome da empresa:</p>
+                    <p class="dados-cliente">CPF ou CNPJ:</p>
+                    <p class="dados-cliente">Código GP Cabling:</p>
                 </div>
-            </table>
+                <br/>
+                <div aling="center">
+                    <p class="direct-vendedor"><b>Seu vendedor segue em cópia neste e-mail:</b><br>Shirlei Gomes De Oliveira Simao - shirlei@gpcabling.com.br</p>
+                    <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
+                </div>
+                <h2 class="resumo">Resumo do seu orçamento:</h2>
+                <div class="center dataTable-container">
+                    <table id="datatablesSimple" class="center dataTable-table">
+                        <thead>
+                            <tr>
+                                <th class="item-tabela">Quantidade</th>
+                                <th class="item-tabela">Código</th>
+                                <th class="item-tabela">Part number</th>
+                                <th class="item-tabela">Descrição do item</th>
+                                <th class="item-tabela">Fabricante</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>01</td>
+                            <td>94013</td>
+                            <td>xxxxxxxxxxxxxx</td>
+                            <td>Cabo UTP</td>
+                            <td>NX</td>
+                        </tr>
+                        <tr>
+                            <td>03</td>
+                            <td>95403</td>
+                            <td>xxxxxxxxxxxxxxx</td>
+                            <td>RJ-45</td>
+                            <td>CM</td>
+                        </tr>
+                    </table>
+                </div>
+                <br/>
+                <br>
+                <div  class="center" width="680">
+                    <p><b>Obrigado!</b><br/>GP Cabling! Maior distribuidora de Cabeamento Estruturado, Data Centers, CFTV, Redes Industriais e Nobreaks.</p>
+                    <a href="https://gpcabling.com.br/"><img width="200" style="margin: 30px;" src="https://gpcabling.com.br/public/img/logo_cotaonline_alta.jpg" alt="Logo GP"></a>            
+                </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>

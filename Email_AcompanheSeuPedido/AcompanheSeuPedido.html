@@ -46,8 +46,8 @@ body {
 
 .top {
     padding-top: 40px;
-    padding-left: 10% !important;
-    padding-right: 2% !important;
+    padding-left: 8% !important;
+    padding-right: 8% !important;
 }
 
 /*Icon progressbar*/
@@ -126,7 +126,7 @@ body {
 
 /*Color number of the step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
-    background: #651FFF;
+    background: #005CA9;
 }
 
 #progressbar li.active:before {
@@ -143,16 +143,25 @@ body {
     padding-bottom: 20px;
 }
 
+img {
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
 </style>
 
 </head>
 
 <body className='snippet-body'>
+    <div>
+        <img width="700" src="https://gpcabling.com.br/public/img/logo_gpcabling_alta.jpg" alt="">
+    </div>
 <div class="container px-2 px-md-4 py-5 mx-auto">
     <div class="card">
         <div class="row d-flex justify-content-between px-3 top">
             <div class="d-flex">
-                <h5>PEDIDO: <span class="text-primary font-weight-bold">150.120</span></h5>
+                <h5>PEDIDO: <span class="font-weight-bold">150.120</span></h5>
             </div>
             <div class="d-flex flex-column text-sm-right">
                 <p class="mb-0">Data emissão: <span>01/12/19</span></p>
@@ -171,32 +180,32 @@ body {
             </ul>
             </div>
         </div>
-        <div class="row justify-content-between top">
-            <div class="row d-flex icon-content">
+        <div class="row justify-content-between top" style="margin-top: -45px">
+            <div class="icon-content">
                 <img class="icon" src="https://i.imgur.com/9nnc9Et.png">
                 <div class="d-flex flex-column">
                     <p class="font-weight-bold">Processado</p>
                 </div>
             </div>
-            <div class="d-flex icon-content">
+            <div class="icon-content">
                 <img class="icon" src="img/separado.png">
                 <div>
                     <p class="font-weight-bold">Separado</p>
                 </div>
             </div>
-            <div class="d-flex icon-content">
+            <div class="icon-content">
                 <img class="icon" src="img/faturado.png">
                 <div class="d-flex flex-column">
                     <p class="font-weight-bold">Faturado</p>
                 </div>
             </div>
-            <div class="d-flex icon-content">
+            <div class="icon-content">
                 <img class="icon" src="https://i.imgur.com/TkPm63y.png">
                 <div class="d-flex flex-column">
                     <p class="font-weight-bold">Coletado</p>
                 </div>
             </div>
-            <div class="d-flex icon-content">
+            <div class="icon-content">
                 <img class="icon" src="https://i.imgur.com/HdsziHP.png">
                 <div class="d-flex flex-column">
                     <p class="font-weight-bold">Entregue</p>
@@ -209,32 +218,35 @@ body {
     <div class="card">
         <table class="table table-bordered">
             <thead>
-              <tr>
+                <tr>
+                    <th style="text-align:center" colspan="5">Detalhes:</th>
+                </tr>
+            <tr>
                 <th scope="col">Código</th>
                 <th scope="col">Produto</th>
                 <th scope="col">Quatidade</th>
                 <th scope="col">Valor Unitário</th>
                 <th scope="col">Valor Total</th>
-              </tr>
+            </tr>
             </thead>
             <tbody>
-              <tr>
+            <tr>
                 <td>63188</td>
                 <td>SWT 8-PORT GE FULL POE EXT PS, 2X1G</td>
                 <td>1PC</td>
                 <td>R$4.623,98</td>
                 <td>R$4.623,98</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
                 <td>63188</td>
                 <td>SWT 8-PORT GE FULL POE EXT PS, 2X1G</td>
                 <td>1PC</td>
                 <td>R$4.623,98</td>
                 <td>R$4.623,98</td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
             </tbody>
-          </table>
+        </table>
     </div>
 </div>
 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>

@@ -3,14 +3,14 @@
     <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>Snippet - BBBootstrap</title>
+        <title>Acompanhe seu pedido</title>
         <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
         <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
         <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
         <style>
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 /* Track */
@@ -32,7 +32,7 @@ body {
     color: #000;
     overflow-x: hidden;
     height: 100%;
-    background-color: #8C9EFF;
+    background-color: #e9e9e9;
     background-repeat: no-repeat;
 }
 
@@ -40,14 +40,13 @@ body {
     z-index: 0;
     background-color: #ECEFF1;
     padding-bottom: 20px;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-bottom: -80px;
     border-radius: 10px;
 }
 
 .top {
     padding-top: 40px;
-    padding-left: 9% !important;
+    padding-left: 10% !important;
     padding-right: 2% !important;
 }
 
@@ -138,17 +137,10 @@ body {
 .icon {
     width: 60px;
     height: 60px;
-    margin-right: 15px;
 }
 
 .icon-content { 
     padding-bottom: 20px;
-}
-
-@media screen and (max-width: 992px) {
-    .icon-content {
-        width: 50%;
-    }
 }
 
 </style>
@@ -160,11 +152,11 @@ body {
     <div class="card">
         <div class="row d-flex justify-content-between px-3 top">
             <div class="d-flex">
-                <h5>ORDER <span class="text-primary font-weight-bold">#Y34XDHR</span></h5>
+                <h5>PEDIDO: <span class="text-primary font-weight-bold">150.120</span></h5>
             </div>
             <div class="d-flex flex-column text-sm-right">
-                <p class="mb-0">Expected Arrival <span>01/12/19</span></p>
-                <p>USPS <span class="font-weight-bold">234094567242423422898</span></p>
+                <p class="mb-0">Data emissão: <span>01/12/19</span></p>
+                <p>Cliente: <span class="font-weight-bold">GP Cabling And Security Solutions</span></p>
             </div>
         </div>
         <!-- Add class 'active' to progress -->
@@ -183,34 +175,66 @@ body {
             <div class="row d-flex icon-content">
                 <img class="icon" src="https://i.imgur.com/9nnc9Et.png">
                 <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>Processed</p>
+                    <p class="font-weight-bold">Processado</p>
                 </div>
             </div>
-            <div class="row d-flex icon-content">
-                <img class="icon" src="https://i.imgur.com/u1AzR7w.png">
-                <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>Shipped</p>
+            <div class="d-flex icon-content">
+                <img class="icon" src="img/separado.png">
+                <div>
+                    <p class="font-weight-bold">Separado</p>
                 </div>
             </div>
-            <div class="row d-flex icon-content">
-                <img class="icon" src="">
+            <div class="d-flex icon-content">
+                <img class="icon" src="img/faturado.png">
                 <div class="d-flex flex-column">
                     <p class="font-weight-bold">Faturado</p>
                 </div>
             </div>
-            <div class="row d-flex icon-content">
+            <div class="d-flex icon-content">
                 <img class="icon" src="https://i.imgur.com/TkPm63y.png">
                 <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Order<br>Arrived</p>
+                    <p class="font-weight-bold">Coletado</p>
                 </div>
             </div>
-            <div class="row d-flex icon-content">
+            <div class="d-flex icon-content">
                 <img class="icon" src="https://i.imgur.com/HdsziHP.png">
                 <div class="d-flex flex-column">
-                    <p class="font-weight-bold">Finished</p>
+                    <p class="font-weight-bold">Entregue</p>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="container px-2 px-md-4 py-5 mx-auto">
+    <div class="card">
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Quatidade</th>
+                <th scope="col">Valor Unitário</th>
+                <th scope="col">Valor Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>63188</td>
+                <td>SWT 8-PORT GE FULL POE EXT PS, 2X1G</td>
+                <td>1PC</td>
+                <td>R$4.623,98</td>
+                <td>R$4.623,98</td>
+              </tr>
+              <tr>
+                <td>63188</td>
+                <td>SWT 8-PORT GE FULL POE EXT PS, 2X1G</td>
+                <td>1PC</td>
+                <td>R$4.623,98</td>
+                <td>R$4.623,98</td>
+              </tr>
+              <tr>
+            </tbody>
+          </table>
     </div>
 </div>
 <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>

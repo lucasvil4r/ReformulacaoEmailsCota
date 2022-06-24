@@ -35,6 +35,8 @@
     padding: 0;
 }
 
+/*Progressbar*/
+
 /*Icon progressbar*/
 #progressbar {
     margin-bottom: 30px;
@@ -65,6 +67,7 @@
     height: 40px;
     line-height: 10rem;
     display: block;
+    font-size: 20px;
     background: #C5CAE9;
     border-radius: 50%;
     margin: auto;
@@ -72,6 +75,7 @@
 }
 
 /*ProgressBar connectors*/
+
 #progressbar li:after {
     content: '';
     width: 100%;
@@ -79,14 +83,13 @@
     background: #C5CAE9;
     position: absolute;
     top: 16px;
-    right: 50%;
 }
 
 #progressbar li:last-child:after {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     position: absolute;
-    right: 50%;
+    left: 10rem;
 }
 
 
@@ -113,9 +116,10 @@
 }
 
 #progressbar li.active:before {
-    font-family: FontAwesome;
     content: "\f00c";
 }
+
+/*Progressbar*/
 
 .es-button {
     mso-style-priority: 100 !important;
@@ -1018,7 +1022,7 @@ textarea {
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://gpcabling.com.br/public/img/logo_gpcabling_alta.jpg" alt style="display: block;" width="760"></a></td>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://gpcabling.com.br/public/img/logo_gpcabling_alta.jpg" alt style="display: block;" width="300"></a></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -1028,17 +1032,57 @@ textarea {
                                                         </table>
                                                     </td>
                                                 </tr>
+                                                <td class="esd-structure" align="left">
+                                                    <!--[if mso]><table width="800" cellpadding="0" cellspacing="0"><tr><td width="400" valign="top"><![endif]-->
+                                                    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="es-left" align="left">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="400" class="esd-container-frame es-m-p20b" align="left">
+                                                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="left" class="esd-block-text es-p30">
+                                                                                    <h3 style="line-height: 100%;">PEDIDO:&nbsp;<b>150.120</b></h3>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--[if mso]></td><td width="0"></td><td width="400" valign="top"><![endif]-->
+                                                    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="es-right" align="right">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="400" align="left" class="esd-container-frame">
+                                                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td align="right" class="esd-block-text es-p15r">
+                                                                                    <h3 style="line-height: 200%;">Data emissão:&nbsp;01/12/19</h3>
+                                                                                    <h3 style="line-height: 200%;"><span style="white-space: nowrap;">Cliente:&nbsp;GP Cabling And Security Solutions</span></h3>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--[if mso]></td></tr></table><![endif]-->
+                                                </td>
                                                 <tr>
                                                     <td class="esd-structure" align="left">
-                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                        <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="100%">
                                                             <tbody>
                                                                 <tr>
                                                                     <td width="800" class="esd-container-frame" align="center" valign="top">
                                                                         <ul id="progressbar" class="text-center">
                                                                             <li class="active step0"></li>
                                                                             <li class="active step0"></li>
-                                                                            <li class="active step0"></li>
-                                                                            <li class="active step0"></li>
+                                                                            <li class="step0"></li>
+                                                                            <li class="step0"></li>
                                                                             <li class="step0"></li>
                                                                         </ul>
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
@@ -1080,7 +1124,7 @@ textarea {
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text es-p10t es-p10b">
-                                                                                        <p>Processado</p>
+                                                                                        <p><b>Processado</b></p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
@@ -1528,6 +1572,25 @@ textarea {
                                     <td class="esd-stripe" align="center">
                                         <table class="es-footer-body" style="background-color: #ffffff;" width="800" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
                                             <tbody>
+                                                <tr>
+                                                    <td class="esd-structure" align="left">
+                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="800" class="esd-container-frame" align="center" valign="top">
+                                                                        <table cellpadding="0" cellspacing="0" width="100%">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" class="esd-block-image es-p20t es-p20b" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://gpcabling.com.br/public/img/banner_cota6600clientes_1580x396.jpg" alt style="display: block;" height="137"></a></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
                                                 <tr>
                                                     <td class="esd-structure es-p20t es-p20r es-p20l" style="background-color: #ffffff;" bgcolor="#ffffff" align="left">
                                                         <table width="100%" cellspacing="0" cellpadding="0">

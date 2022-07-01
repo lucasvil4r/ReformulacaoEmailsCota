@@ -3,6 +3,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="author" content="Richard Quintana" content="Lucas Vilar">
             <title>Acompanhe seu pedido</title>
+            <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
             <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
@@ -49,7 +50,7 @@
                 }
 
                 .item-tabela{
-                    text-align:center;   
+                    text-align:left;   
                 }
 
             </style>
@@ -177,27 +178,27 @@
                         <br>
                         <br>
                         <h3 align="center">DETALHES:</h3>
-                        <table align="center" style="text-align:center;font-size: 18px;" width="800">
+                        <table id="datatablesSimple" class="centerTable dataTable-table" align="center" style="text-align:center;font-size: 18px;" width="800">
                             <thead>
                                 <tr class="item-tabela">
-                                    <th class="item-tabela">Código</th>
-                                    <th class="item-tabela">Produto</th>
                                     <th class="item-tabela">Quantidade</th>
+                                    <th class="item-tabela">Código</th>
+                                    <th class="item-tabela" style="text-align:center">Descrição</th>
                                     <th class="item-tabela">Valor Unitário</th>
                                     <th class="item-tabela">Valor Total</th>
                                 </tr>
                             </thead>
                             <tr class="item-tabela">
+                                <td class="item-tabela">20</td>
                                 <td class="item-tabela">50980</td>
                                 <td class="item-tabela">JACK RJ-45 MGS 600 X10D BRANCO A/B</td>
-                                <td class="item-tabela">20PC</td>
                                 <td class="item-tabela">R$116,91</td>
                                 <td class="item-tabela">R$2.338,32</td>
                             </tr>
                             <tr class="item-tabela">
+                                <td class="item-tabela">20</td>
                                 <td class="item-tabela">50980</td>
                                 <td class="item-tabela">JACK RJ-45 MGS 600 X10D BRANCO A/B</td>
-                                <td class="item-tabela">20PC</td>
                                 <td class="item-tabela">R$116,91</td>
                                 <td class="item-tabela">R$2.338,32</td>
                             </tr>

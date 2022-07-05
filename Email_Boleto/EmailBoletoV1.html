@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Richard Quintana" content="Lucas Vilar">
+
+        <title>Resumo Boleto</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <style>
+            
+            * {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+            }
+
+            .orcamento {
+                font-size: 30px;
+                text-align: center;
+                margin: auto;
+                padding: auto;
+            }
+
+            .text-orcamento {
+                text-align: center;
+                margin: 10px;
+                width: 100%;
+                height: 100%;
+                font-size: 18px;
+                padding: auto;
+                text-align: justify;
+                max-width: fit-content;
+            }
+
+            .title-dados {
+                text-align: left;
+                margin: 10px;
+                font-size: 20px;
+                max-width: fit-content;
+                padding: auto;
+            }
+
+            .dados-cliente {
+                text-align: left;
+                margin: 10px;
+                font-size: 18px;
+                max-width:fit-content;
+                padding: auto;
+            }
+
+            .direct-vendedor {
+                text-align:center;
+                font-size: 20px;
+                padding: auto;
+            }
+
+            .resumo {
+                font-size: 30px;
+                text-align: center;
+                padding: auto;
+            }
+
+            .center {
+                text-align: center;  
+                margin-left: auto; 
+                margin-right: auto;
+            }
+
+            .centerTable {
+                margin-left: auto;
+                margin-right: auto;
+                width: 700px;
+            }
+
+            td, th {
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <a align="center" href="https://gpcabling.com.br/"><img width="738" src="https://gpcabling.com.br/public/img/banner_cota6600clientes_1580x396.jpg" alt="Logo GP"></a>
+        </div>
+        <div class="center">
+            <table class="centerTable" width="700" style="border:2px solid #CDCDCD; border-top:none">
+                <tr>
+                    <td>
+                        <h1 class="orcamento" style="margin-top:5px">RESUMO DO SEU BOLETO</h1>
+                        <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:10px; margin-bottom:10px">
+                        <h2 class="title-dados">Seus dados:</h2>
+                        <div>
+                            <p class="dados-cliente">Email:</p>
+                            <p class="dados-cliente">Nome da empresa:</p>
+                            <p class="dados-cliente">CPF ou CNPJ:</p>
+                        </div>
+                        <div aling="center">
+                            <p class="direct-vendedor"><b>Em caso de duvidas favor entrar em contato com e-mail abaixo:</b><br>financeiro - financeiro@gpcabling.com.br</p>
+                            <hr size="2" width="100%" noshade align="center" style="border:1px solid #CDCDCD; margin-top:30px; margin-bottom:30px">
+                        </div>
+                        <h3 class="resumo">Detalhes:</h3>
+                        <div class="center dataTable-container" width="700">
+                            <table id="datatablesSimple" class="centerTable dataTable-table" style="text-align:center">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center">Duplicata</th>
+                                        <th style="text-align:center">Vencimento</th>
+                                        <th style="text-align:center">Valor Duplicata</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>123964B</td>
+                                    <td>19/07/2022</td>
+                                    <td>R$ 9.650,00</td>
+                                </tr>
+                                <tr>
+                                    <td>123964B</td>
+                                    <td>19/07/2022</td>
+                                    <td>R$ 9.650,00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <table align="center" class="center">
+                                <tr>
+                                    <td>
+                                        <p><b>Obrigado!</b><br/>GP Cabling! Maior distribuidora de Cabeamento Estruturado, Data Centers, CFTV, Redes Industriais e Nobreaks.</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table align="center" style="padding: 20px">
+                                <tr>
+                                    <td>
+                                        <a href="https://gpcabling.com.br/"><img class="cotaLogo" width="200" src="https://gpcabling.com.br/public/img/logo_cotaonline_alta.jpg" alt="Logo GP"></a>            
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table width="700" align="center" bgcolor="white">
+                <tbody>
+                    <tr>
+                        <td align="center">
+                            <table class="es-footer-body" align="center">
+                                <tbody style="font-family:Roboto, sans-serif">
+                                    <tr style="font-family:Roboto, sans-serif">
+                                        <td align="left" style="font-family:Roboto, sans-serif;padding:0;Margin:0">
+                                            <table cellpadding="0" cellspacing="0" width="100%" style="font-family:Roboto, sans-serif;mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                                <tbody style="font-family:Roboto, sans-serif">
+                                                    <tr style="font-family:Roboto, sans-serif">
+                                                        <td align="center" valign="top" style="font-family:Roboto, sans-serif;padding:0;Margin:0;">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td valign="top" align="center" style="padding-right:10px"><a href="https://www.facebook.com/gpcabling/"><img title="Facebook" src="https://gpcabling.com.br/public/img/pedido_erp/facebook_icon.png" alt="Fb" width="32" style="font-family:Roboto, sans-serif;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                                                                        <td valign="top" align="center" style="padding-right:10px"><a href="https://twitter.com/gpcabling"><img title="Twitter" src="https://gpcabling.com.br/public/img/pedido_erp/twitter_icon.png" alt="Tw" width="32" style="font-family:Roboto, sans-serif;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                                                                        <td valign="top" align="center" style="padding-right:10px"><a href="https://www.instagram.com/gpcabling/?hl=pt"><img title="Instagram" src="https://gpcabling.com.br/public/img/pedido_erp/instagram_icon.png" alt="Inst" width="32" style="font-family:Roboto, sans-serif;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                                                                        <td valign="top" align="center" style="padding-right:10px"><a href="https://www.youtube.com/c/GPCabling"><img title="Youtube" src="https://gpcabling.com.br/public/img/pedido_erp/youtube_icon.png" alt="Yt" width="32" style="font-family:Roboto, sans-serif;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                                                                        <td valign="top" align="center" style="padding-right:10px"><a href="https://www.linkedin.com/company/gpcabling/mycompany/verification"><img title="Linkedin" src="https://gpcabling.com.br/public/img/pedido_erp/linkedin_icon.png" alt="In" width="32" style="font-family:Roboto, sans-serif;display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic"></a></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="padding-top:5px;padding-bottom:5px">
+                                                                            <p style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;line-height:24px;color:#999999;font-size:10px">GP CABLING DISTRIBUIDORA E COMERCIO LTDA</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
